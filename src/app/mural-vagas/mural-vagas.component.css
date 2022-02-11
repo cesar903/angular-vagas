@@ -12,9 +12,12 @@
 .card{
     border-radius: 30px;
     padding: 3px;
+    height: 550px;
 }
 .imagem{
     border-radius: 30px;
+    max-height: 200px;
+    min-height: 200px;
 }
 .container{
     margin-bottom: 10%;

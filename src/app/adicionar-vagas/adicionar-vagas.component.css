@@ -8,7 +8,7 @@
     color: aliceblue;
 }
 .formulario{
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .enviaFoto{
     color: rgb(255, 8, 0);
@@ -20,8 +20,14 @@
     border-radius: 5%;
     border-color: rgba(0, 0, 0, 0.37);
 }
-.titulo{
-    color: rgb(14, 14, 22);
+.titulo1{
+    color: rgb(25, 202, 40);
+}
+.titulo2{
+    color: rgb(25, 52, 202);
+}
+.titulo3{
+    color: rgb(202, 37, 25);
 }
 .conteudo{
     margin-top: 20px;

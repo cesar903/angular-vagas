@@ -1,19 +1,34 @@
 <main class="formulario">
-    <div class="container">
-        <h1><span class="titulo">Adicionar nova Vaga</span></h1>
+    <div class="container ">
+        <h1><span class="titulo1">Adicionar</span> vaga</h1>
         <div class="row">
             <div class="conteudo">
-                <p> <input type="text" placeholder="Id Vaga:"></p>
-                <br>
-                <p><input type="text" placeholder="Nome da Vaga:"></p>
-                <br>
-                <P><input type="text" placeholder="Descricao da Vaga:"></P>
-                <br>
-                <p><input type="number" placeholder="Salario da Vaga:"></p>
-                <br>
-                <p>Foto da Vaga: <input class="enviaFoto" type="file"></p>
+                <form >
 
-                <button class="botao">Enviar</button>
+                    <p><strong>Identificador da Vaga:</strong></p>
+                    <p><input type="text" name="id" [(ngModel)]="vaga.id"></p>
+                    <br>
+
+                    <p><strong>Nome:</strong></p>
+                    <p><input type="text" name="nome" [(ngModel)]="vaga.nome"  placeholder="Ex: vaga de aux"></p>
+                    <br>
+
+                    <p><strong>Foto ( escolha entre foto1.jpg á foto9.jpg):</strong></p>
+                    <p><input type="text" name="foto" [(ngModel)]="vaga.foto" placeholder="Ex: foto1.jpg"></p>
+                    <br>
+
+                    <p><strong>Descricao da Vaga:</strong></p>
+                    <P><input type="text" name="descricao" [(ngModel)]="vaga.descricao"  placeholder="Breve descricao"></P>
+                    <br>
+
+                    <p><strong>Salario:</strong></p>
+                    <p><input type="text" name="salario" [(ngModel)]="vaga.salario"></p>
+                    <br>
+
+                    <button class="btn btn-outline-success" (click)="cadastar()">Adicionar</button>
+                
+
+                </form>
             </div>
         </div>
     </div>
